@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="800.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.LoginController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="141.0" layoutX="129.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="129.0">
+         <image>
+            <Image url="@../../../../../bin/ch/makery/address/images/cinemaxCrop.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="56.0" layoutY="368.0" prefHeight="64.0" prefWidth="287.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="56.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="80.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="169.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="59.0" text="Username:" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+            <Label text="Password:" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <TextField fx:id="usernameBox" GridPane.columnIndex="1" />
+            <TextField fx:id="passwordBox" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="loginScreenBtn" layoutX="154.0" layoutY="453.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="91.0" text="Login" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="154.0" />
+      <Label fx:id="invalidLabel" layoutX="186.0" layoutY="497.0" />
+   </children>
+</AnchorPane>
